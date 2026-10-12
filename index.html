@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>梧桐河灌区模型平台</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232e9e6b'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3E%E6%A2%A7%3C/text%3E%3C/svg%3E">
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #f5f7f6; }
+  #frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  #boot {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 10px;
+    font: 14px/1.8 "PingFang SC", "Microsoft YaHei", sans-serif; color: #4a5b52; background: #f5f7f6;
+  }
+  #boot .spin {
+    width: 30px; height: 30px; border: 3px solid #d3e0d8; border-top-color: #2e9e6b;
+    border-radius: 50%; animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div id="boot">
+  <div class="spin"></div>
+  <div>正在加载 梧桐河灌区模型平台…</div>
+</div>
+<iframe id="frame" src="https://wutonghe-irrigation-platform.app.workbuddy.host/" loading="eager"
+        onload="document.getElementById('boot').style.display='none'"></iframe>
+</body>
+</html>
